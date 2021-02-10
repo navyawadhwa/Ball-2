@@ -6,7 +6,9 @@ class Paper {
         density: 1.2
     }
 
-    this.body = Bodies.circle(x,y,30, options);
+    this.x=x;
+    this.y=y;
+    this.body = Bodies.circle(this.x,this.y,70, options);
     World.add(world, this.body);
     this.image=loadImage("paper.png");
   }
@@ -21,9 +23,9 @@ display(){
   strokeWeight(2);
   stroke ("white");
   fill("blue");
-  ellipse(0,0,40);
-  //imageMode(CENTER);
-  //image(this.image, 0, 0, this.width, this.height);
+  //ellipse(0,0,40);
+  imageMode(CENTER);
+  image(this.image, 0, 0, 70);
   //rect(0, 0, this.width, this.height);
   pop();
 }

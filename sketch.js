@@ -15,6 +15,8 @@ function setup() {
 
 	//Create the Bodies Here.
 	paper1 = new Paper(100,450);
+
+
 	ground1= new Ground(400, 600,800,20);
 
 	dust4=new Dust(510,520,130,130);
@@ -33,6 +35,7 @@ function draw() {
   keyPressed();
 
   paper1.display();
+  //Body.scale(paper1, 0.5, 0.7);
   dust4.display();
   ground1.display();
   
